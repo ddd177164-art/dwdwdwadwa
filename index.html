@@ -2,82 +2,88 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Service Temporarily Unavailable</title>
+    <title>Compromised</title>
 
-    <!-- Description shown when the URL is shared -->
-    <meta name="description" content="inteldatasold.space is currently down due to an ongoing online attack.">
+    <!-- Description shown when URL is shared -->
+    <meta name="description" content="Compromised by Kyle">
 
-    <!-- Social preview (recommended) -->
-    <meta property="og:title" content="Service Temporarily Unavailable">
-    <meta property="og:description" content="inteldatasold.space is down due to an ongoing online attack.">
+    <!-- Social preview -->
+    <meta property="og:title" content="Compromised">
+    <meta property="og:description" content="Compromised by Kyle">
     <meta property="og:type" content="website">
 
     <style>
         body {
             margin: 0;
             padding: 0;
-            background-color: #0b0f14;
+            background-color: #0f0f0f;
             color: #ffffff;
             font-family: Arial, Helvetica, sans-serif;
             display: flex;
-            align-items: center;
             justify-content: center;
+            align-items: center;
             height: 100vh;
             text-align: center;
+            cursor: pointer;
         }
 
         .container {
-            max-width: 700px;
-            padding: 40px;
-            border-radius: 12px;
-            background: #121821;
-            box-shadow: 0 0 40px rgba(0,0,0,0.6);
+            max-width: 600px;
         }
 
         h1 {
-            font-size: 32px;
+            font-size: 36px;
             margin-bottom: 20px;
-            color: #ff5555;
+            color: #ff4d4d;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
         }
 
         p {
             font-size: 18px;
-            line-height: 1.6;
-            opacity: 0.9;
-        }
-
-        .url {
-            margin-top: 20px;
-            font-weight: bold;
-            color: #7aa2ff;
-        }
-
-        .footer {
-            margin-top: 30px;
-            font-size: 14px;
-            opacity: 0.6;
+            opacity: 0.85;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>Service Temporarily Unavailable</h1>
+        <h1>Site Has Been Compromised</h1>
+        <p>dont change your source back :)</p>
+        <P>i am your daddy - kyle</P>
+
+        <img src="https://cdn.discordapp.com/attachments/1441952498335223820/1453045345503416513/faa297d4c7e950739e17d5c078993f74-removebg-preview.png?ex=694c056e&is=694ab3ee&hm=4a7ad19370d8f1eb3ce3c6c2448113d544277d98a6667f99801d1313e3653606&" alt="Warning Image">
 
         <p>
-            The website is currently offline due to an ongoing online attack.
-            Our team is actively working to mitigate the issue and restore service
-            as soon as possible.
+            Compromised by Kyle.<br>
+            Please don’t post this stuff again.
         </p>
 
-        <div class="url">
-            https://inteldatasold.space/
-        </div>
-
-        <div class="footer">
-            Thank you for your patience.
-        </div>
+        <p style="font-size:14px;opacity:0.6;">(click anywhere)</p>
     </div>
+
+    <!-- Audio -->
+    <audio id="bgAudio">
+        <!-- REPLACE THIS WITH YOUR AUDIO FILE -->
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        const audio = document.getElementById("bgAudio");
+        let played = false;
+
+        document.body.addEventListener("click", () => {
+            if (!played) {
+                audio.volume = 0.8;
+                audio.play();
+                played = true;
+            }
+        });
+    </script>
 
 </body>
 </html>
